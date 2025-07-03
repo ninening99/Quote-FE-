@@ -1,0 +1,167 @@
+.quote-container {
+  padding: 24px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px; /* ขยับขึ้นนิดหน่อย */
+}
+
+.header-right {
+  margin-left: auto;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.logout-button:hover {
+  background-color: #dc2626;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.controls input,
+.controls button,
+.controls select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.main-content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+
+.quote-list {
+  flex: 2;
+  display: grid;
+  gap: 16px;
+}
+
+
+.chart-section {
+  flex: 1.6;
+  margin-top: 0;
+}
+
+
+.quote-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.quote-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.quote-author {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.vote-count {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.vote-button {
+  background-color: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #e0f2fe;
+}
+
+.vote-button:hover {
+  background-color: #e0f2fe;
+}
+
+.edit-button {
+  background-color: #f0fdf4; 
+  color: #15803d;
+  border: 1px solid #dcfce7;
+}
+
+.edit-button:hover {
+  background-color: #dcfce7;
+}
+
+.delete-button {
+  background-color: #fef2f2; 
+  color: #b91c1c;
+  border: 1px solid #fee2e2;
+}
+
+.delete-button:hover {
+  background-color: #fee2e2;
+}
+
+
+
+.loading {
+  padding: 20px;
+  font-size: 16px;
+  color: #374151;
+}
+.loading.error {
+  color: red;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+

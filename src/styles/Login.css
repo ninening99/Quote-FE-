@@ -1,0 +1,113 @@
+.login-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;   
+  height: 100vh;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/Images/bg-login.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 0;
+}
+
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+.login-title {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #0070f3;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #0070f3;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #0051cc;
+}
+
+.register-button {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #ccc;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-button:hover {
+  background-color: #bbb;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem 1rem;
+    max-width: 90%;
+  }
+}
