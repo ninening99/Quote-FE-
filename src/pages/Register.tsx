@@ -61,7 +61,7 @@ const Register: React.FC = () => {
   password &&
   confirmPassword &&
   passwordsMatch &&
-  passwordStrength >= 2; // Medium ขึ้นไป
+  passwordStrength >= 3; // Medium ขึ้นไป
 
 
   const handleRegister = (): void => {
@@ -172,11 +172,12 @@ const Register: React.FC = () => {
           </div>
         )}
 
-        {!passwordSecure && password.length > 0 && (
+        {passwordStrength < 3 && password.length > 0 && (
           <p style={{ color: "red", fontSize: "0.85rem", marginTop: 0, marginBottom: "1rem" }}>
             ⚠️ Password must be at least 8 characters, with uppercase, number, and special character.
           </p>
         )}
+
 
         <input
           className="login-input"
